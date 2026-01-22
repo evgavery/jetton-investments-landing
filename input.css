@@ -1,0 +1,321 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+@theme {
+    --color-background: #000000;
+    --color-secondary: #0A0A0A;
+    --color-accent: #1785E5;
+    --color-second-accent: #BBEB00;
+    --color-table-accent: #25CB55;
+    --color-foreground: #E2E4EB;
+    --color-foreground-muted: #9C9EA4;
+    --color-card: #1E1F21;
+    --color-card-secondary: #0D0D0D;
+    --color-card-foreground: #35383B;
+    --color-border: #424242;
+    --color-border-accent: #46A8FE66;
+}
+
+@layer base {
+    html {
+        font-family: "IBM Plex Sans", sans-serif;
+        font-style: normal;
+    }
+
+    body {
+        @apply bg-background text-foreground font-medium flex flex-col md:gap-35 gap-20;
+    }
+}
+
+@layer components {
+    .btn {
+        @apply flex rounded-lg gap-2 p-3 md:px-8 items-center justify-center font-semibold text-sm md:text-lg min-w-max cursor-pointer;
+    }
+
+    .btn-main {
+        @apply text-foreground bg-accent;
+    }
+
+    .btn-secondary {
+        @apply bg-card;
+    }
+
+    .btn-accent {
+        @apply bg-second-accent flex items-center justify-center rounded-xl text-background font-semibold cursor-pointer px-4 py-3;
+    }
+
+    .btn-main .icon {
+        @apply w-5 md:w-7 max-[375px]:hidden;
+    }
+
+    header {
+        @apply flex items-center justify-between px-4 md:px-6 py-4 w-full gap-6 border-b border-border fixed left-0 top-0 bg-background z-10;
+    }
+
+    header .logo {
+        @apply shrink-0
+    }
+
+    header nav {
+        @apply hidden lg:flex items-center text-nowrap justify-between flex-1 min-w-0 max-w-[715px];
+    }
+
+    header .action-container {
+        @apply flex items-center gap-2 md:gap-3 shrink-0;
+    }
+
+    header .flag {
+        @apply w-12 md:w-13 max-[375px]:w-10;
+    }   
+
+    section,
+    footer {
+        @apply p-0 md:px-6 lg:px-25 w-full flex justify-center;
+    }
+
+    .section-container {
+        @apply w-full lg:max-w-7xl flex flex-col px-4 md:px-0;
+    }
+
+    h2 {
+        @apply text-[clamp(3.2rem,6vw,4rem)] leading-[clamp(3.2rem,7vw,5rem)] font-semibold;
+    }
+
+    .link-item {
+        @apply flex items-center bg-card-foreground gap-2 rounded-md p-2 min-w-max text-xs;
+    }
+
+    .wallet-item {
+        @apply bg-card-foreground rounded-md px-4 py-2 font-normal text-nowrap;
+    }
+
+    .statistic-item {
+        @apply flex md:flex-1 flex-col rounded-3xl border border-border p-4 gap-2 relative h-110 overflow-hidden bg-card-secondary;
+    }
+
+    .statistic-heading {
+        @apply text-3xl font-semibold text-accent;
+    }
+
+    .statistic-secondary-heading {
+        @apply text-lg font-medium;
+    }
+
+    .statistic-description {
+        @apply text-foreground-muted md:w-full w-1/2 relative z-5;
+    }
+
+    .statistic-image {
+        @apply absolute absolute right-4 bottom-5 z-3 min-w-0;
+    }
+
+    .statistic-blur {
+        @apply absolute inset-x-0 bottom-0 h-[30%] z-3 backdrop-blur-xl mask-t-from-accent mask-t-to-accent/0;
+    }
+    
+    .statistic-bg-lightning {
+        @apply absolute inset-0 z-1 pointer-events-none bg-[radial-gradient(600px_340px_at_85%_115%,rgba(23,133,229,0.55),rgba(23,133,229,0)_70%)];
+    }
+
+    .statistic-bg-second-lightning {
+        @apply absolute inset-0 z-1 pointer-events-none bg-[radial-gradient(520px_300px_at_88%_120%,rgba(23,133,229,0.55),rgba(23,133,229,0)_70%),radial-gradient(360px_220px_at_70%_125%,rgba(23,133,229,0.25),rgba(23,133,229,0)_70%)];
+    }
+
+    .blur-fade {
+        -webkit-mask-image: linear-gradient(to top, black 70%, transparent 10 0%);
+        mask-image: linear-gradient(to top, black 70%, transparent 80%);
+    }
+
+    table {
+        @apply table-fixed w-full;
+    }
+
+    table caption {
+        @apply text-start text-xl font-medium;
+    }
+
+    thead th {
+        @apply w-1/4 text-start text-sm font-normal py-4 border-b border-border;
+    }
+
+    thead th:nth-child(3),
+    thead th:nth-child(4) {
+        @apply md:table-cell hidden;
+    }
+
+    tbody tr td:nth-child(3),
+    tbody tr td:nth-child(4) {
+        @apply md:table-cell hidden;
+    }
+
+    tbody tr {
+        @apply not-last:border-b border-border text-sm gap-8;
+    }
+
+    tbody td {
+        @apply py-4;
+    }
+
+    tbody tr:last-child td {
+        @apply pb-0;
+    }
+
+    .jetton-utility-item {
+        @apply rounded-3xl border border-border p-6 flex flex-col justify-between gap-4;
+    }
+
+    .jetton-utility-item .image {
+        @apply max-w-16;
+    }
+
+    .jetton-utility-item .layer-glow {
+        @apply pointer-events-none absolute left-2 top-2 blur-lg h-22 w-22 rounded-full
+           opacity-0 transition duration-300 ease-out
+           group-hover:opacity-100 group-hover:scale-110;
+    }
+
+    .jetton-utility-item:nth-child(1) .layer-glow {
+        @apply bg-[radial-gradient(circle,rgba(23,133,229,1)_0%,rgba(0,255,38,0)_70%)];
+    }
+
+    .jetton-utility-item:nth-child(2) .layer-glow,
+    .jetton-utility-item:nth-child(3) .layer-glow {
+        @apply blur-xl bg-[radial-gradient(circle,rgba(81,211,35,1)_0%,rgba(0,255,38,0)_70%)];
+    }
+
+    .jetton-utility-item:nth-child(4) .layer-glow {
+        @apply blur-xl bg-[radial-gradient(circle,rgba(234,64,92,1)_0%,rgba(0,255,38,0)_70%)];
+    }
+
+    .jetton-utility-item:nth-child(5) .layer-glow,
+    .jetton-utility-item:nth-child(6) .layer-glow,
+    .jetton-utility-item:nth-child(8) .layer-glow {
+        @apply blur-xl bg-[radial-gradient(circle,rgba(22,191,201,1)_0%,rgba(0,255,38,0)_70%)];
+    }
+
+    .jetton-utility-item:nth-child(7) .layer-glow {
+        @apply blur-xl bg-[radial-gradient(circle,rgba(166,81,215,1)_0%,rgba(0,255,38,0)_70%)];
+    }
+
+    .jetton-utility-item-content {
+        @apply flex flex-col gap-4;
+    }
+
+    .jetton-utility-item-content p {
+        @apply text-xl font-medium;
+    }
+
+    .jetton-utility-item-content .implemented-marker {
+        @apply flex items-center gap-1 rounded-4xl bg-[#7DC336] text-card text-sm font-medium uppercase max-w-max py-1 px-2;
+    }
+
+    .roadmap-items {
+        @apply flex flex-col gap-3;
+    }
+
+    .roadmap-item {
+        @apply flex items-center gap-1 border border-border-accent bg-accent/15 p-4 xl:p-6 rounded-2xl text-accent text-lg lg:text-3xl font-medium;
+    }
+
+    .roadmap-item.in-progress {
+        @apply bg-secondary border-card-foreground text-foreground-muted;
+    }
+
+    .roadmap-item.in-progress .roadmap-icon {
+        @apply hidden;
+    }
+
+    .roadmap-item.in-progress .roadmap-progress-icon {
+        @apply w-5 xl:w-8 visible;
+    }
+
+    .roadmap-year {
+        @apply flex flex-col gap-4 relative;
+    }
+
+    .roadmap-year-heading {
+        @apply xl:text-2xl font-medium relative flex items-center before:content-[''] before:absolute before:left-[-10px] before:w-2 before:h-2 lg:before:w-4 lg:before:h-4 before:bg-accent before:rounded-full lg:before:left-[-40px];
+    }
+
+    .roadmap-year::after {
+        content: '';
+        @apply absolute left-[-7px] lg:left-[-33px]
+                top-[16px]
+                w-[2px]
+                h-[calc(100%+2rem)]
+                bg-accent/40;
+    }
+
+    .roadmap-year:nth-last-child(2)::after {
+        @apply bg-foreground-muted
+    }
+
+    .roadmap-year:nth-last-child(2) .roadmap-year-heading::before {
+        @apply bg-foreground-muted
+    }
+
+    .roadmap-year:nth-last-child(3)::after {
+        @apply bg-linear-to-b from-[accent/40] to-80% to-foreground-muted
+    }
+
+    .roadmap-year:last-child::after {
+        content: none;
+    }
+
+    .roadmap-year:last-child .roadmap-year-heading {
+        @apply before:bg-foreground-muted;
+    }
+
+    .roadmap-icon,
+    .roadmap-item.in-progress .roadmap-progress-icon {
+        @apply w-5 xl:w-8 visible;
+    }
+
+    .faq {
+        @apply flex flex-col gap-4;
+    }
+
+    .faq-item {
+        @apply flex flex-col md:flex-row relative cursor-pointer;
+    }
+
+    .faq-item.active .faq-heading {
+        @apply text-foreground before:content-[''] before:h-4 lg:before:h-12 before:w-px before:bg-accent before:-left-2 lg:before:-left-6 before:absolute before:transition-[background];
+    }
+
+    .faq-heading {
+        @apply text-2xl lg:text-4xl h-20 flex items-center text-card transition-[color] font-semibold md:flex-1 hover:text-foreground;
+    }
+
+    .faq-content {
+        @apply text-lg pointer-events-none max-h-0 overflow-hidden transition-[max-height] md:flex-1;
+    }
+
+    .faq-item.active .faq-content {
+        @apply max-h-full pointer-events-auto;
+    }
+
+    footer {
+        @apply py-4 border-t border-border;
+    }
+
+    footer nav {
+        @apply flex items-center gap-x-6 gap-y-3 text-xs md:text-base text-nowrap flex-wrap;
+    }
+
+    footer .socials {
+        @apply flex items-center gap-2 md:gap-6;
+    }
+
+    footer .socials a img {
+        @apply md:w-8;
+    }
+    
+    footer .copyright-container {
+        @apply flex flex-col md:flex-row md:justify-between md:w-full gap-6 text-foreground-muted text-xs md:text-base;
+    }
+
+    footer .copyright-container .all-rights {
+        @apply md:text-right;
+    }
+}

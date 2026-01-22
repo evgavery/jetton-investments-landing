@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="./assets/Logo.svg" />
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="/" class="logo">
+            <img src="./assets/Logo.svg" alt="JetTon">
+        </a>
+        <nav>
+            <a href="#">About</a>
+            <a href="#">Top Holders</a>
+            <a href="#">Tokenomics</a>
+            <a href="#">Roadmap</a>
+            <a href="#">FAQ</a>
+            <a href="#">Contact Us</a>
+        </nav>
+        <div class="action-container">
+            <img src="./assets/FlagIcon.svg" alt="Flag" class="flag">
+            <a class="btn btn-main">
+                <img src="./assets/TonIcon.svg" class="icon">
+                Connect wallet
+            </a>
+        </div>
+    </header>
+    <section class="mt-30 md:mt-43">
+        <div class="section-container border border-border bg-secondary rounded-3xl gap-17 md:gap-22 px-0">
+            <div
+                class="flex flex-col-reverse shadow-[0_4px_24px_rgba(0,0,0,0.6)] lg:flex-row-reverse rounded-3xl border-b border-b-border px-4 py-9 md:px-13 md:py-9 xl:px-25 lg:py-12 bg-[url('./assets/maskBG.svg')] bg-center bg-no-repeat bg-cover relative md:overflow-visible overflow-hidden">
+                <img src="./assets/RocketIllustration.png"
+                    class="relative lg:absolute left-10 lg:-left-10 bottom-0 z-1 lg:w-3/5 w-full">
+                <div class="absolute inset-x-0 bottom-0 z-2 w-full h-30 lg:h-38 backdrop-blur-sm blur-fade"></div>
+                <img src="./assets/LayerLightning.png" class="absolute -left-px bottom-0 z-2">
+                <div class="flex flex-col gap-6 w-full lg:max-w-1/2 relative z-4">
+                    <div class="flex md:flex-col-reverse md:gap-16 items-center justify-between gap-2">
+                        <img src="./assets/LogoWithIcon.svg" alt="JetTon" class="shrink-1">
+                        <div class="flex items-center gap-5 md:w-full max-[1200px]:flex-col max-[1200px]:items-start">
+                            <img src="./assets/N1_Platform.svg" alt="#1 iGaming Platform" class="lg:w-47 shrink-0">
+                            <div class="hidden md:flex flex-col gap-4">
+                                <p class="font-semibold">Future Integrations</p>
+                                <div class="flex flex-wrap gap-2 w-full text-xs">
+                                    <div class="wallet-item">IOS Apps</div>
+                                    <div class="wallet-item">VK Games</div>
+                                    <div class="wallet-item">FB Games</div>
+                                    <div class="wallet-item">Android Apps</div>
+                                    <div class="wallet-item">OK Games</div>
+                                    <div class="wallet-item">YA Games</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <p class="text-foreground-muted">JetTon.Games is a unique cross-platform solution built on the
+                            TheOpenNetwork technologies</p>
+                        <div class="flex flex-col gap-3">
+                            <div class="flex flex-col gap-2">
+                                <div class="flex bg-card rounded-lg p-3 items-center justify-between">
+                                    <p>JETTON's own game utility token</p>
+                                    <img src="./assets/PlusIcon.svg">
+                                </div>
+                                <div class="flex bg-card rounded-lg p-3 items-center justify-between">
+                                    <p>Based on the TON blockchain</p>
+                                    <img src="./assets/PlusIcon.svg">
+                                </div>
+                                <div class="flex bg-card rounded-lg p-3 items-center justify-between">
+                                    <p>JETTON Farming Bot</p>
+                                    <img src="./assets/PlusIcon.svg">
+                                </div>
+                            </div>
+                            <a href="#" class="btn-accent">Play JetTon Games</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="flex flex-col lg:flex-row lg:justify-between gap-5 px-4 pb-4 md:px-13 md:pb-9 xl:px-25 lg:pb-12 relative">
+                <div class="flex flex-col gap-4 h-full justify-between">
+                    <div class="flex flex-col gap-4">
+                        <h2
+                            class="uppercase relative z-3 text-[clamp(3.2rem,6vw,4.5rem)] leading-[clamp(3.2rem,7vw,5rem)] font-semibold">
+                            IMPROVING<br>iGAMING<br>INDUSTRY</h2>
+                        <p class="relative z-3 text-foreground-muted hidden lg:block">Welcome to the world of
+                            cutting-edge technology!</p>
+                    </div>
+                    <img src="./assets/coin-foreground.png"
+                        class="hidden lg:block absolute xl:top-1/2 top-3/5 xl:translate-y-[-46%] translate-y-[-50%] xl:-inset-x-40 -inset-x-25 z-2 min-w-0 w-[75%] pointer-events-none">
+                    <img src="./assets/coin-background.png"
+                        class="hidden lg:block absolute xl:top-1/3 top-1/2 translate-y-[-55%] xl:inset-x-50 inset-x-30 z-1 min-w-0 w-3/5 pointer-events-none">
+                    <div class="hidden lg:flex items-center gap-2 flex-wrap">
+                        <a href="#" class="btn btn-main uppercase">Whitepaper</a>
+                        <a href="#" class="btn btn-secondary uppercase">contract</a>
+                        <a href="#" class="btn btn-secondary uppercase">fund</a>
+                    </div>
+                </div>
+                <ul class="flex flex-col gap-3 relative z-3">
+                    <li class="flex items-center justify-between bg-card rounded-xl p-4 flex-wrap">
+                        <p class="font-medium text-xl">Jetton</p>
+                        <div class="flex items-center gap-2 bg-card-foreground rounded-full pl-2 pr-4 py-1 shrink-0">
+                            <img src="./assets/JettonToken.svg" alt="">
+                            <p class="text-sm font-medium">1 JetTon = $0.08</p>
+                        </div>
+                    </li>
+                    <li class="flex flex-col gap-2 bg-card rounded-xl p-4 relative">
+                        <p class="text-sm font-medium">Jetton (Jetty) Dedust</p>
+                        <a href="#" class="link-item">
+                            <img src="./assets/ton-jetty.png">
+                            TON/JETTY
+                            <img src="./assets/LinkIcon.svg" class="w-4 md:w-5">
+                        </a>
+                        <div class="absolute right-2 top-2 rounded-full bg-card-foreground p-1">
+                            <img src="./assets/HelpIcon.svg">
+                        </div>
+                    </li>
+                    <li class="flex flex-col gap-2 bg-card rounded-xl p-4 relative">
+                        <div class="text-sm font-medium flex items-center gap-2">
+                            <img src="./assets/ston-icon.svg">
+                            STON.fi
+                        </div>
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <a href="#" class="link-item">
+                                <img src="./assets/ton-jetton.svg">
+                                TON/JETTON
+                                <img src="./assets/LinkIcon.svg" class="w-4 md:w-5">
+                            </a>
+                            <a href="#" class="link-item">
+                                <img src="./assets/usd-jetton.svg">
+                                USD₮/JETTON
+                                <img src="./assets/LinkIcon.svg" class="w-4 md:w-5">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex flex-col gap-2 bg-card rounded-xl p-4 relative">
+                        <p class="text-sm font-medium">DeDust</p>
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <a href="#" class="link-item">
+                                <img src="./assets/ton-jetton.svg">
+                                TON/JETTON
+                                <img src="./assets/LinkIcon.svg" class="w-4 md:w-5">
+                            </a>
+                            <a href="#" class="link-item">
+                                <img src="./assets/usd-jetton.svg">
+                                USD₮/JETTON
+                                <img src="./assets/LinkIcon.svg" class="w-4 md:w-5">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex flex-col gap-2 bg-card rounded-xl p-4 relative">
+                        <p class="text-sm font-medium">MEXC</p>
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <a href="#" class="link-item">
+                                <img src="./assets/usd-jetton.svg">
+                                USD₮/JETTON
+                                <img src="./assets/LinkIcon.svg" class="w-4 md:w-5">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex gap-3 items-center md:flex-wrap max-[375px]:flex-col">
+                        <div
+                            class="flex flex-col gap-2 bg-card rounded-xl p-4 relative flex-1 min-w-max max-[375px]:w-full">
+                            <div class="text-sm font-medium flex items-center gap-2">
+                                <img src="./assets/xrocket-icon.svg">
+                                xRocket
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <a href="#" class="link-item">
+                                    <img src="./assets/tgbot-icon.svg">
+                                    telegram-bot
+                                    <img src="./assets/LinkIcon.svg" class="w-4 md:w-5">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2 bg-card rounded-xl p-4 relative flex-1 max-[375px]:w-full">
+                            <div class="text-sm font-medium flex items-center gap-2">
+                                <img src="./assets/changenow-icon.svg">
+                                change.NOW
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <a href="#" class="link-item">
+                                    <img src="./assets/exchange-icon.svg">
+                                    Exchange
+                                    <img src="./assets/LinkIcon.svg" class="w-4 md:w-5">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="lg:hidden mt-5 flex flex-col justify-center gap-2">
+                    <a href="#" class="btn btn-main uppercase w-full">Whitepaper</a>
+                    <div class="flex items-center gap-2">
+                        <a href="#" class="btn btn-secondary uppercase w-full">contract</a>
+                        <a href="#" class="btn btn-secondary uppercase w-full">fund</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="section-container gap-7">
+            <h2>Telegram audience
+                represents<br> 900 million monthly users</h2>
+            <div class="flex flex-col gap-16">
+                <div class="flex items-end gap-13">
+                    <img src="./assets/Graph1.png" class="w-full min-w-0 hidden md:block">
+                    <div class="flex flex-col gap-7">
+                        <p class="text-accent text-8xl font-semibold">XXX<span class="relative">%</p>
+                        <p class="text-lg font-medium">Рост за какое-то время</p>
+                    </div>
+                </div>
+                <div class="flex items-end gap-13">
+                    <div class="flex flex-col gap-7">
+                        <p class="text-accent text-8xl font-semibold">40x</p>
+                        <p class="text-lg font-medium">increase in monthly active users</p>
+                    </div>
+                    <img src="./assets/Graph2.png" class="w-full min-w-0 hidden md:block">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="section-container gap-7">
+            <h2>JetTon Games
+                Statistics</h2>
+            <div
+                class="flex flex-col md:gap-2 gap-3 flex-wrap md:grid md:grid-cols-[repeat(auto-fit,minmax(280px,1fr))]">
+                <div class="statistic-item">
+                    <div class="flex flex-col">
+                        <p class="statistic-heading">1 000 000+</p>
+                        <p class="statistic-secondary-heading">spins per day</p>
+                    </div>
+                    <p class="statistic-description">Our platform processes over 1,000,000 game spins daily, ensuring
+                        uninterrupted user activity
+                        worldwide</p>
+                    <img src="./assets/WheelIllustration.png" class="statistic-image">
+                    <div class="statistic-bg-lightning"></div>
+                    <div class="statistic-bg-second-lightning"></div>
+                    <div class="statistic-blur"></div>
+                </div>
+                <div class="statistic-item">
+                    <div class="flex flex-col">
+                        <p class="statistic-heading">20+</p>
+                        <p class="statistic-secondary-heading">supported cryptocurrencies</p>
+                    </div>
+                    <p class="statistic-description">JetTon supports over 20 cryptocurrencies, offering users a variety
+                        of options to top up their balances</p>
+                    <img src="./assets/CryptoIllustration.png" class="statistic-image">
+                    <div class="statistic-bg-lightning"></div>
+                    <div class="statistic-bg-second-lightning"></div>
+                    <div class="statistic-blur"></div>
+                </div>
+                <div class="statistic-item">
+                    <div class="flex flex-col ">
+                        <p class="statistic-heading">20 000 000+</p>
+                        <p class="statistic-secondary-heading">players</p>
+                    </div>
+                    <p class="statistic-description">More than 20,000,000 users have joined our platform
+                        and play over 10,000 games every day</p>
+                    <img src="./assets/PeopleIllustration.png" class="statistic-image">
+                    <div class="statistic-bg-lightning"></div>
+                    <div class="statistic-bg-second-lightning"></div>
+                    <div class="statistic-blur"></div>
+                </div>
+                <div class="statistic-item">
+                    <div class="flex flex-col ">
+                        <p class="statistic-heading">Easy way</p>
+                        <p class="statistic-secondary-heading">to buy JETTON with a card</p>
+                    </div>
+                    <p class="statistic-description">A simple token purchase process in just 3 clicks</p>
+                    <img src="./assets/BuyIllustration.png" class="statistic-image">
+                    <div class="statistic-bg-lightning"></div>
+                    <div class="statistic-bg-second-lightning"></div>
+                    <div class="statistic-blur"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="section-container md:flex-row gap-4">
+            <div class="flex flex-col w-full md:max-w-1/2 gap-4">
+                <div class="flex flex-col gap-4">
+                    <h2>Tokenomics</h2>
+                    <p class="text-foreground-muted">Our token is released on the TON blockchain
+                        The entire token issue is secure smart contracts with a pre-programmed lock-up period and the
+                        end
+                        date of the vesting</p>
+                </div>
+                <div class="border border-border bg-card-secondary p-4 md:p-7 rounded-3xl w-full">
+                    <table>
+                        <caption>Token Parameters</caption>
+                        <tbody>
+                            <tr>
+                                <td>Ticker</td>
+                                <td>JETTON</td>
+                            </tr>
+                            <tr>
+                                <td>Blockchain</td>
+                                <td>TON, Solana (Soon), ETH (Soon)</td>
+                            </tr>
+                            <tr>
+                                <td>Total Supply</td>
+                                <td>84 098 401 JETTON (15 901 599 burned)</td>
+                            </tr>
+                            <tr>
+                                <td>TGE Date</td>
+                                <td>31.07.2023</td>
+                            </tr>
+                            <tr>
+                                <td>DEX Listings Price</td>
+                                <td>$O.1</td>
+                            </tr>
+                            <tr>
+                                <td>Vesting Period</td>
+                                <td>4 years</td>
+                            </tr>
+                            <tr>
+                                <td>Total holders</td>
+                                <td>99.853</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="w-full md:max-w-1/2 mx-auto flex justify-center items-center">
+                <div class="w-full">
+                    <div id="chart" class="w-full aspect-[9/7]"></div>
+                    <div id="legend"
+                        class="mt-6 flex flex-wrap justify-center gap-x-10 gap-y-3 text-[12px] text-zinc-400">
+                    </div>
+                    <div id="tt" class="fixed z-50 opacity-0 pointer-events-none
+                  rounded-lg border border-white/10 bg-zinc-700/80
+                  px-3 py-2 text-[12px] text-zinc-200
+                  transition-opacity duration-150" style="transform: translate(10px, 10px);">
+                        <span class="inline-flex items-center gap-2">
+                            <span id="ttDot" class="h-3 w-3 rounded-[3px]"></span>
+                            <span id="ttText"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="section-container gap-4">
+            <h2>Top Holders</h2>
+            <div class="border border-border bg-card-secondary p-4 md:p-7 rounded-3xl w-full">
+                <table>
+                    <caption>Top Holders</caption>
+                    <thead>
+                        <tr>
+                            <th>Fund name</th>
+                            <th>Address</th>
+                            <th>Amount</th>
+                            <th>Pie</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Early contributors</td>
+                            <td>EQCR4…XywSX</td>
+                            <td>
+                                <div class="flex items-center gap-2 min-w-max">
+                                    <img src="./assets/JettonToken.svg">
+                                    <p>20 000 000</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="flex items-center gap-10">
+                                    <p>23.71%</p>
+                                    <div class="w-full max-w-22 h-3 bg-card-foreground rounded-lg overflow-hidden">
+                                        <div class="w-1/4 h-full bg-table-accent rounded-lg"></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Early contributors</td>
+                            <td>EQCR4…XywSX</td>
+                            <td>
+                                <div class="flex items-center gap-2 min-w-max">
+                                    <img src="./assets/JettonToken.svg">
+                                    <p>20 000 000</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="flex items-center gap-10">
+                                    <p>23.71%</p>
+                                    <div class="w-full max-w-22 h-3 bg-card-foreground rounded-lg overflow-hidden">
+                                        <div class="w-1/4 h-full bg-table-accent rounded-lg"></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Early contributors</td>
+                            <td>EQCR4…XywSX</td>
+                            <td>
+                                <div class="flex items-center gap-2 min-w-max">
+                                    <img src="./assets/JettonToken.svg">
+                                    <p>20 000 000</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="flex items-center gap-10">
+                                    <p>23.71%</p>
+                                    <div class="w-full max-w-22 h-3 bg-card-foreground rounded-lg overflow-hidden">
+                                        <div class="w-1/4 h-full bg-table-accent rounded-lg"></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Early contributors</td>
+                            <td>EQCR4…XywSX</td>
+                            <td>
+                                <div class="flex items-center gap-2 min-w-max">
+                                    <img src="./assets/JettonToken.svg">
+                                    <p>20 000 000</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="flex items-center gap-10">
+                                    <p>23.71%</p>
+                                    <div class="w-full max-w-22 h-3 bg-card-foreground rounded-lg overflow-hidden">
+                                        <div class="w-1/4 h-full bg-table-accent rounded-lg"></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Early contributors</td>
+                            <td>EQCR4…XywSX</td>
+                            <td>
+                                <div class="flex items-center gap-2 min-w-max">
+                                    <img src="./assets/JettonToken.svg">
+                                    <p>20 000 000</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="flex items-center gap-10">
+                                    <p>23.71%</p>
+                                    <div class="w-full max-w-22 h-3 bg-card-foreground rounded-lg overflow-hidden">
+                                        <div class="w-1/4 h-full bg-table-accent rounded-lg"></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Early contributors</td>
+                            <td>EQCR4…XywSX</td>
+                            <td>
+                                <div class="flex items-center gap-2 min-w-max">
+                                    <img src="./assets/JettonToken.svg">
+                                    <p>20 000 000</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="flex items-center gap-10">
+                                    <p>23.71%</p>
+                                    <div class="w-full max-w-22 h-3 bg-card-foreground rounded-lg overflow-hidden">
+                                        <div class="w-1/4 h-full bg-table-accent rounded-lg"></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Early contributors</td>
+                            <td>EQCR4…XywSX</td>
+                            <td>
+                                <div class="flex items-center gap-2 min-w-max">
+                                    <img src="./assets/JettonToken.svg">
+                                    <p>20 000 000</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="flex items-center gap-10">
+                                    <p>23.71%</p>
+                                    <div class="w-full max-w-22 h-3 bg-card-foreground rounded-lg overflow-hidden">
+                                        <div class="w-1/4 h-full bg-table-accent rounded-lg"></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Early contributors</td>
+                            <td>EQCR4…XywSX</td>
+                            <td>
+                                <div class="flex items-center gap-2 min-w-max">
+                                    <img src="./assets/JettonToken.svg">
+                                    <p>20 000 000</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="flex items-center gap-10">
+                                    <p>23.71%</p>
+                                    <div class="w-full max-w-22 h-3 bg-card-foreground rounded-lg overflow-hidden">
+                                        <div class="w-1/4 h-full bg-table-accent rounded-lg"></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Early contributors</td>
+                            <td>EQCR4…XywSX</td>
+                            <td>
+                                <div class="flex items-center gap-2 min-w-max">
+                                    <img src="./assets/JettonToken.svg">
+                                    <p>20 000 000</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="flex items-center gap-10">
+                                    <p>23.71%</p>
+                                    <div class="w-full max-w-22 h-3 bg-card-foreground rounded-lg overflow-hidden">
+                                        <div class="w-1/4 h-full bg-table-accent rounded-lg"></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="section-container gap-6">
+            <h2>JETTON Token Utility</h2>
+            <div class="flex flex-col md:grid md:grid-cols-[repeat(auto-fit,minmax(380px,1fr))] gap-3">
+                <div class="jetton-utility-item group relative">
+                    <img src="./assets/CupIcon.svg" class="image">
+                    <div class="layer-glow"></div>
+                    <div class="jetton-utility-item-content">
+                        <p>Currency for deposits on the platform</p>
+                        <div class="implemented-marker">
+                            <img src="./assets/DoneIcon.svg">
+                            implemented
+                        </div>
+                    </div>
+                </div>
+                <div class="jetton-utility-item group relative">
+                    <img src="./assets/BotIcon.svg" class="image">
+                    <div class="layer-glow"></div>
+                    <div class="jetton-utility-item-content">
+                        <p>Farming</p>
+                        <div class="implemented-marker">
+                            <img src="./assets/DoneIcon.svg">
+                            implemented
+                        </div>
+                    </div>
+                </div>
+                <div class="jetton-utility-item group relative">
+                    <img src="./assets/BotIcon.svg" class="image">
+                    <div class="layer-glow"></div>
+                    <div class="jetton-utility-item-content">
+                        <p>JETTON Farming BOT</p>
+                        <div class="implemented-marker">
+                            <img src="./assets/DoneIcon.svg">
+                            implemented
+                        </div>
+                    </div>
+                </div>
+                <div class="jetton-utility-item group relative">
+                    <img src="./assets/BurnIcon.svg" class="image">
+                    <div class="layer-glow"></div>
+                    <div class="jetton-utility-item-content">
+                        <p>Monthly JETTON burn</p>
+                        <div class="implemented-marker">
+                            <img src="./assets/DoneIcon.svg">
+                            implemented
+                        </div>
+                    </div>
+                </div>
+                <div class="jetton-utility-item group relative">
+                    <img src="./assets/DepsIcon.svg" class="image">
+                    <div class="layer-glow"></div>
+                    <div class="jetton-utility-item-content">
+                        <p>Bonuses for deposits in JETTON</p>
+                        <div class="implemented-marker">
+                            <img src="./assets/DoneIcon.svg">
+                            implemented
+                        </div>
+                    </div>
+                </div>
+                <div class="jetton-utility-item group relative">
+                    <img src="./assets/DepsIcon.svg" class="image">
+                    <div class="layer-glow"></div>
+                    <div class="jetton-utility-item-content">
+                        <p>JETTON Staking</p>
+                        <div class="implemented-marker">
+                            <img src="./assets/DoneIcon.svg">
+                            implemented
+                        </div>
+                    </div>
+                </div>
+                <div class="jetton-utility-item group relative">
+                    <img src="./assets/EconomyIcon.svg" class="image">
+                    <div class="layer-glow"></div>
+                    <div class="jetton-utility-item-content">
+                        <p>JETTON Economy Games</p>
+                        <div class="implemented-marker">
+                            <img src="./assets/DoneIcon.svg">
+                            implemented
+                        </div>
+                    </div>
+                </div>
+                <div class="jetton-utility-item group relative">
+                    <img src="./assets/DepsIcon.svg" class="image">
+                    <div class="layer-glow"></div>
+                    <div class="jetton-utility-item-content">
+                        <p>JETTON NFT Collection</p>
+                        <div class="implemented-marker">
+                            <img src="./assets/DoneIcon.svg">
+                            implemented
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="section-container gap-4 lg:gap-12">
+            <h2>Our Roadmap</h2>
+            <div class="flex flex-col gap-9">
+                <div class="roadmap-year">
+                    <p class="roadmap-year-heading">2023 Q1</p>
+                    <div class="roadmap-items">
+                        <div class="roadmap-item">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <p>Starting developing JetTon Platform</p>
+                        </div>
+                        <div class="roadmap-item">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <p>JETTON GAME token minted</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="roadmap-year">
+                    <p class="roadmap-year-heading">2023 Q2</p>
+                    <div class="roadmap-items">
+                        <div class="roadmap-item">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <p>Play and Earn (Play games to get JETTON)</p>
+                        </div>
+                        <div class="roadmap-item">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <p>Listing on DEX DeDust</p>
+                        </div>
+                        <div class="roadmap-item">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <p>Listing on CoinMarketCap/CoinGecko</p>
+                        </div>
+                        <div class="roadmap-item">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <p>Listing on DEX STON.fi</p>
+                        </div>
+                        <div class="roadmap-item">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <p>Start Marketing start KOL's</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="roadmap-year">
+                    <p class="roadmap-year-heading">2024 Q1</p>
+                    <div class="roadmap-items">
+                        <div class="roadmap-item">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <p>Telegram bot with tasks and rewards in $JETTON</p>
+                        </div>
+                        <div class="roadmap-item">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <p>Start token burn program</p>
+                        </div>
+                        <div class="roadmap-item">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <p>Listing on CEX</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="roadmap-year">
+                    <p class="roadmap-year-heading">2024 Q2</p>
+                    <div class="roadmap-items">
+                        <div class="roadmap-item">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <p>Ton Open League: Season 1 — Season 4</p>
+                        </div>
+                        <div class="roadmap-item">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <p>Referral Bot Launch</p>
+                        </div>
+                        <div class="roadmap-item">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <p>Monthly Burn Launch</p>
+                        </div>
+                        <div class="roadmap-item">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <p>Project Positioning Definition</p>
+                        </div>
+                        <div class="roadmap-item">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <p>NFT Marketplace technical discovery</p>
+                        </div>
+                        <div class="roadmap-item">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <p>Recruiting</p>
+                        </div>
+                        <div class="roadmap-item">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <p>Implementation of the corporate policy</p>
+                        </div>
+                        <div class="roadmap-item">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <p>Listing on CEX</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="roadmap-year">
+                    <p class="roadmap-year-heading">2024 Q3</p>
+                    <div class="roadmap-items">
+                        <div class="roadmap-item">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <p>Utility testing in casino</p>
+                        </div>
+                        <div class="roadmap-item">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <p>New Hires: New CMO, bot developer, and product manager</p>
+                        </div>
+                        <div class="roadmap-item">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <p>Complete overhaul of bot mechanics</p>
+                        </div>
+                        <div class="roadmap-item">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <p>Conducted multiple giveaways and contests through the bot, including collaborations with
+                                ByBit and Trust Wallet</p>
+                        </div>
+                        <div class="roadmap-item">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <p>Revised farming mechanics and adjusted farming rewards</p>
+                        </div>
+                        <div class="roadmap-item">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <p>Developed cross-chain communication and a bridge between TON and ETH</p>
+                        </div>
+                        <div class="roadmap-item">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <p>Attracted investors to the project</p>
+                        </div>
+                        <div class="roadmap-item">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <p>Development of game concepts based on the $JETTON economy</p>
+                        </div>
+                        <div class="roadmap-item">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <p>Developed a monthly burning program — a total of 44M tokens will be burned</p>
+                        </div>
+                        <div class="roadmap-item">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <p>Updated the project's tokenomics to align with the burning mechanism</p>
+                        </div>
+                        <div class="roadmap-item">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <p>Partnered with Tonstakers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="roadmap-year">
+                    <p class="roadmap-year-heading">2025 Q1</p>
+                    <div class="roadmap-items">
+                        <div class="roadmap-item in-progress">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <img src="./assets/InProgressIcon.svg" class="roadmap-progress-icon">
+                            <p>Utility testing in casino</p>
+                        </div>
+                        <div class="roadmap-item in-progress">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <img src="./assets/InProgressIcon.svg" class="roadmap-progress-icon">
+                            <p>JETTON listing on Solana DEX</p>
+                        </div>
+                        <div class="roadmap-item in-progress">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <img src="./assets/InProgressIcon.svg" class="roadmap-progress-icon">
+                            <p>Launch of the JETTON farming program on the Solana blockchain</p>
+                        </div>
+                        <div class="roadmap-item">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <p>Launch of a lottery in Farming bot</p>
+                        </div>
+                        <div class="roadmap-item in-progress">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <img src="./assets/InProgressIcon.svg" class="roadmap-progress-icon">
+                            <p>Development of a unique game based on the JETTON economy in the Farming bot</p>
+                        </div>
+                        <div class="roadmap-item in-progress">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <img src="./assets/InProgressIcon.svg" class="roadmap-progress-icon">
+                            <p>Release and presentation of a new tokenomics model</p>
+                        </div>
+                        <div class="roadmap-item">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <p>Planning and implementation of utility development in the casino and Farming bot</p>
+                        </div>
+                        <div class="roadmap-item">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <p>New mechanics for the Farming bot</p>
+                        </div>
+                        <div class="roadmap-item">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <p>Referral program in Farming bot 2.0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="roadmap-year">
+                    <p class="roadmap-year-heading">2025 Q2</p>
+                    <div class="roadmap-items">
+                        <div class="roadmap-item in-progress">
+                            <img src="./assets/DoneIconBlue.png" class="roadmap-icon">
+                            <img src="./assets/InProgressIcon.svg" class="roadmap-progress-icon">
+                            <p>Strategic Pivot Incoming</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="section-container gap-4">
+            <h2>You have questions,<br>We have answers</h2>
+            <div class="faq">
+                <div class="faq-item active">
+                    <p class="faq-heading">What is Cliff?</p>
+                    <p class="faq-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula
+                        placerat
+                        magna, id varius arcu malesuada cursus. Aliquam mi nunc, tincidunt eu lobortis vitae, sagittis
+                        eu
+                        ex. Morbi tempus tincidunt dictum. Nunc a augue quis quam suscipit efficitur. Morbi nec sem sed
+                        metus mollis vulputate at vitae felis. Integer accumsan lobortis nulla, quis tristique ex
+                        viverra
+                        sit amet. Suspendisse tincidunt metus vel nunc auctor rhoncus. Aliquam quis ornare magna.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-heading">What is Vesting?</p>
+                    <p class="faq-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula
+                        placerat
+                        magna, id varius arcu malesuada cursus. Aliquam mi nunc, tincidunt eu lobortis vitae, sagittis
+                        eu
+                        ex. Morbi tempus tincidunt dictum. Nunc a augue quis quam suscipit efficitur. Morbi nec sem sed
+                        metus mollis vulputate at vitae felis. Integer accumsan lobortis nulla, quis tristique ex
+                        viverra
+                        sit amet. Suspendisse tincidunt metus vel nunc auctor rhoncus. Aliquam quis ornare magna.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-heading">What is this project about?</p>
+                    <p class="faq-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula
+                        placerat
+                        magna, id varius arcu malesuada cursus. Aliquam mi nunc, tincidunt eu lobortis vitae, sagittis
+                        eu
+                        ex. Morbi tempus tincidunt dictum. Nunc a augue quis quam suscipit efficitur. Morbi nec sem sed
+                        metus mollis vulputate at vitae felis. Integer accumsan lobortis nulla, quis tristique ex
+                        viverra
+                        sit amet. Suspendisse tincidunt metus vel nunc auctor rhoncus. Aliquam quis ornare magna.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-heading">What makes the project unique?</p>
+                    <p class="faq-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula
+                        placerat
+                        magna, id varius arcu malesuada cursus. Aliquam mi nunc, tincidunt eu lobortis vitae, sagittis
+                        eu
+                        ex. Morbi tempus tincidunt dictum. Nunc a augue quis quam suscipit efficitur. Morbi nec sem sed
+                        metus mollis vulputate at vitae felis. Integer accumsan lobortis nulla, quis tristique ex
+                        viverra
+                        sit amet. Suspendisse tincidunt metus vel nunc auctor rhoncus. Aliquam quis ornare magna.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-heading">Project history</p>
+                    <p class="faq-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula
+                        placerat
+                        magna, id varius arcu malesuada cursus. Aliquam mi nunc, tincidunt eu lobortis vitae, sagittis
+                        eu
+                        ex. Morbi tempus tincidunt dictum. Nunc a augue quis quam suscipit efficitur. Morbi nec sem sed
+                        metus mollis vulputate at vitae felis. Integer accumsan lobortis nulla, quis tristique ex
+                        viverra
+                        sit amet. Suspendisse tincidunt metus vel nunc auctor rhoncus. Aliquam quis ornare magna.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-heading">Technology</p>
+                    <p class="faq-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula
+                        placerat
+                        magna, id varius arcu malesuada cursus. Aliquam mi nunc, tincidunt eu lobortis vitae, sagittis
+                        eu
+                        ex. Morbi tempus tincidunt dictum. Nunc a augue quis quam suscipit efficitur. Morbi nec sem sed
+                        metus mollis vulputate at vitae felis. Integer accumsan lobortis nulla, quis tristique ex
+                        viverra
+                        sit amet. Suspendisse tincidunt metus vel nunc auctor rhoncus. Aliquam quis ornare magna.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-heading">How to use</p>
+                    <p class="faq-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula
+                        placerat
+                        magna, id varius arcu malesuada cursus. Aliquam mi nunc, tincidunt eu lobortis vitae, sagittis
+                        eu
+                        ex. Morbi tempus tincidunt dictum. Nunc a augue quis quam suscipit efficitur. Morbi nec sem sed
+                        metus mollis vulputate at vitae felis. Integer accumsan lobortis nulla, quis tristique ex
+                        viverra
+                        sit amet. Suspendisse tincidunt metus vel nunc auctor rhoncus. Aliquam quis ornare magna.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-heading">Development plans</p>
+                    <p class="faq-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula
+                        placerat
+                        magna, id varius arcu malesuada cursus. Aliquam mi nunc, tincidunt eu lobortis vitae, sagittis
+                        eu
+                        ex. Morbi tempus tincidunt dictum. Nunc a augue quis quam suscipit efficitur. Morbi nec sem sed
+                        metus mollis vulputate at vitae felis. Integer accumsan lobortis nulla, quis tristique ex
+                        viverra
+                        sit amet. Suspendisse tincidunt metus vel nunc auctor rhoncus. Aliquam quis ornare magna.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="section-container gap-3">
+            <div class="flex flex-col gap-3 md:flex-row w-full justify-between">
+                <nav>
+                    <a href="#">About us</a>
+                    <a href="#">Telegram RU</a>
+                    <a href="#">Telegram EN</a>
+                    <a href="#">Forum</a>
+                </nav>
+                <div class="socials">
+                    <a href="#"><img src="./assets/SocialIconX.svg"></a>
+                    <a href="#"><img src="./assets/SocialIconFacebook.svg"></a>
+                    <a href="#"><img src="./assets/SocialIconTG.svg"></a>
+                    <a href="#"><img src="./assets/SocialIconIG.svg"></a>
+                </div>
+            </div>
+            <div class="copyright-container">
+                <p>JetTon Solutions Ltd.<br>Suite 1, Second Floor, Sound & Vision House, Rue Pierre De Possession,
+                    Victoria, Mahe, Seychelles.</p>
+                <p class="all-rights">© 2025 JetTon | All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./index.js"></script>
+<script src="./graph.js" type="module"></script>
+
+</html>
