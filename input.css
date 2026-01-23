@@ -139,12 +139,14 @@
     }
 
     thead th:nth-child(3),
-    thead th:nth-child(4) {
+    thead th:nth-child(4),
+    thead th:nth-child(5) {
         @apply md:table-cell hidden;
     }
 
     tbody tr td:nth-child(3),
-    tbody tr td:nth-child(4) {
+    tbody tr td:nth-child(4),
+    tbody tr td:nth-child(5) {
         @apply md:table-cell hidden;
     }
 
@@ -156,8 +158,21 @@
         @apply py-4;
     }
 
+    thead th:nth-child(5),
+    tbody tr td:nth-child(5) {
+        @apply w-24 max-w-24;
+    }
+
+    tbody tr td:nth-child(4) {
+        @apply pr-2;
+    }
+
     tbody tr:last-child td {
         @apply pb-0;
+    }
+
+    .text-link {
+        @apply text-accent underline;
     }
 
     .jetton-utility-item {
@@ -207,6 +222,10 @@
 
     .jetton-utility-item-content .implemented-marker {
         @apply flex items-center gap-1 rounded-4xl bg-[#7DC336] text-card text-sm font-medium uppercase max-w-max py-1 px-2;
+    }
+
+    .jetton-utility-item-content .implemented-marker.coming-soon {
+        @apply bg-blue-500;
     }
 
     .roadmap-items {
