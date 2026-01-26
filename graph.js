@@ -43,7 +43,7 @@ const data = [{
     },
 ];
 
-const totalSupply = 84098401;
+const totalSupply = 79392786.5;
 
 // ---------- Responsive SVG via viewBox ----------
 const VB_W = 900;
