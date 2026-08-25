@@ -20,6 +20,7 @@
     html {
         font-family: "IBM Plex Sans", sans-serif;
         font-style: normal;
+        scroll-behavior: smooth;
     }
 
     body {
@@ -76,7 +77,8 @@
 
     section,
     footer {
-        @apply p-0 md:px-6 lg:px-25 w-full flex justify-center;
+        /* scroll-mt keeps anchored sections from hiding under the fixed header */
+        @apply p-0 md:px-6 lg:px-25 w-full flex justify-center scroll-mt-24;
     }
 
     .section-container {
