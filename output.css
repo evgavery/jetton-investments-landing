@@ -349,9 +349,6 @@
   .shrink-0 {
     flex-shrink: 0;
   }
-  .shrink-1 {
-    flex-shrink: 1;
-  }
   .translate-y-\[-50\%\] {
     --tw-translate-y: -50%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -479,8 +476,8 @@
       background-color: color-mix(in oklab, var(--color-zinc-700) 80%, transparent);
     }
   }
-  .bg-\[url\(\'\.\/assets\/maskBG\.svg\'\)\] {
-    background-image: url('./assets/maskBG.svg');
+  .bg-\[url\(\'\.\/assets\/MaskBG\.webp\'\)\] {
+    background-image: url('./assets/MaskBG.webp');
   }
   .bg-cover {
     background-size: cover;
