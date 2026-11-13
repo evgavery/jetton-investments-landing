@@ -41,6 +41,10 @@
         @apply bg-card;
     }
 
+    .btn-dao {
+        @apply text-foreground bg-linear-to-r from-accent to-[#7B5CF0];
+    }
+
     .btn-accent {
         @apply bg-second-accent flex items-center justify-center rounded-xl text-background font-semibold cursor-pointer px-4 py-3;
     }
@@ -49,7 +53,8 @@
         @apply w-5 md:w-7 max-[375px]:hidden;
     }
 
-    @media (max-width: 1200px) {
+    /* eight nav links need the room: the header button stays icon-only until 1280px */
+    @media (max-width: 1279px) {
         .btn-main .btn-main-text {
             display: none;
         }
@@ -64,7 +69,7 @@
     }
 
     header nav {
-        @apply hidden lg:flex items-center text-nowrap justify-between flex-1 min-w-0 max-w-[715px];
+        @apply hidden lg:flex items-center text-nowrap justify-between flex-1 min-w-0 max-w-[900px] gap-x-3 text-sm min-[1400px]:text-base;
     }
 
     header .action-container {
@@ -216,8 +221,17 @@
         @apply blur-xl bg-[radial-gradient(circle,rgba(22,191,201,1)_0%,rgba(0,255,38,0)_70%)];
     }
 
-    .jetton-utility-item:nth-child(7) .layer-glow {
+    .jetton-utility-item:nth-child(7) .layer-glow,
+    .jetton-utility-item:nth-child(9) .layer-glow {
         @apply blur-xl bg-[radial-gradient(circle,rgba(166,81,215,1)_0%,rgba(0,255,38,0)_70%)];
+    }
+
+    .jetton-utility-item .image-link {
+        @apply max-w-max relative z-1;
+    }
+
+    .jetton-utility-item-content p a {
+        @apply underline-offset-4 hover:underline;
     }
 
     .jetton-utility-item-content {
@@ -242,6 +256,10 @@
 
     .roadmap-item {
         @apply flex items-center gap-1 border border-border-accent bg-accent/15 p-4 xl:p-6 rounded-2xl text-accent text-lg lg:text-3xl font-medium;
+    }
+
+    .roadmap-item a {
+        @apply underline decoration-1 underline-offset-4 hover:text-foreground;
     }
 
     .roadmap-item.in-progress {
