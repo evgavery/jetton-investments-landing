@@ -1,4 +1,5 @@
-import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
+// local D3 subset (one file) instead of d3@7 from jsdelivr, which pulled ~35 modules
+import * as d3 from "./assets/vendor/d3-chart.min.js";
 
 // ---------- Data in EXACT legend order (as in your screenshot) ----------
 const data = [{
